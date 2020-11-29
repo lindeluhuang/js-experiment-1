@@ -1,11 +1,15 @@
 body {
-    background-color: #edc7a9;
+    background-color: #F7C536;
     background-image: linear-gradient(180deg, #ffffff, rgba(255,255,255,0));
 
     transition: background-color 0.5s;
 
     height: 100vh;
 
+}
+
+#promo {
+    padding: 30px;
 }
 
 section {
@@ -24,7 +28,7 @@ section {
 section div.circle {
     width: 20px;
     height: 20px;
-    background-color: #3e78ed;
+    background-color: #F7C536;
     border-radius: 50%;
     display: inline-block;
 
@@ -57,4 +61,5 @@ footer {
 
 footer img {
     margin: 0 10px;
+    cursor: pointer;
 }
