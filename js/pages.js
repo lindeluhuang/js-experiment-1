@@ -4,37 +4,37 @@ let pageNumber = 0
 // Page content
 const pages = [
     {
-        heading: "Eleanor Shellstrop, <em>The Good Place</em> 4×07",
+        heading: "Eleanor Shellstrop",
         copy: "We do nothing. We hope that our early successes make up for the embarrassing mess we’ve become. Like Facebook. Or America.",
         background: "#78C9ED",
         circle: "#007DC4"
     },
     {
-        heading: "Jason Mendoza, The Good Place 4×09",
+        heading: "Jason Mendoza",
         copy: "When something dope comes along, you gotta lock it down! If you’re always frozen in fear and taking too long to figure out what to do, you’ll miss your opportunity.",
         background: "#FC8776",
         circle: "#C31E08"
     },
     {
-        heading: "Michael, The Good Place 4×09",
+        heading: "Michael",
         copy: "If soulmates do exist, they’re not found. They’re made.",
         background: "#7AE4AE",
         circle: "#02A341"
     },
     {
-        heading: "Chidi Anagonye, ‘The Good Place’ 3×10",
+        heading: "Chidi Anagonye",
         copy: "Here’s an idea. What if we don’t worry about whatever comes next?",
         background: "#F3CF99",
         circle: "#C2802A"
     },
     {
-        heading: "Janet, ‘The Good Place’ 3×12",
+        heading: "Janet",
         copy: "But since nothing seems to make sense, when you find something or someone that does, it’s euphoria.",
         background: "#E2B0DA",
         circle: "#8D4982"
     },
     {
-        heading: "Tahani Al-Jamil, The Good Place 2×05",
+        heading: "Tahani Al-Jamil",
         copy: "I would say I outdid myself, but I’m always this good. So I simply did myself.",
         background: "#D9D393",
         circle: "#C6B304"
