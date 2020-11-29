@@ -2,6 +2,7 @@
 let pageNumber = 0
 
 // Page content
+// From https://www.hypable.com/the-good-place-quotes/
 const pages = [
     {
         heading: "Eleanor Shellstrop",
