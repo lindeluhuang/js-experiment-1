@@ -5,6 +5,7 @@ body {
     transition: background-color 0.5s;
 
     height: 100vh;
+
 }
 
 section {
@@ -46,10 +47,12 @@ footer {
     left: 0;
     width: 100%;
     padding: 30px;
+    box-sizing: border-box;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 footer img {

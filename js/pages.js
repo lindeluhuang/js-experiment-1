@@ -14,7 +14,7 @@ const pages = [
         circle: "#e34a47"
     },
     {
-        copy:  "If soulmates do exist, they’re not found. They’re made.",
+        copy: "If soulmates do exist, they’re not found. They’re made.",
         background: "#d3c7f3",
         circle: "#f7fe00"
     },
@@ -28,13 +28,14 @@ const pages = [
 // Pick relevant tags 
 const prevTag = document.querySelector("footer img.prev")
 const nextTag = document.querySelector("footer img.next")
+const randomTag = document.querySelector("footer img.random")
 const outputTag = document.querySelector("h2")
 const circleTag = document.querySelector("section div.circle")
 const bodyTag = document.querySelector("body")
 
 // Functions for clicking buttons 
 const next = function () {
-    if (pageNumber < (pages.length-1)) {
+    if (pageNumber < (pages.length - 1)) {
         pageNumber++;
     } else {
         pageNumber = 0;
@@ -46,9 +47,24 @@ const previous = function () {
     if (pageNumber > 0) {
         pageNumber--;
     } else {
-        pageNumber = (pages.length-1);
+        pageNumber = (pages.length - 1);
     }
     updateSection(pageNumber);
+}
+
+const random = function () {
+    let newPageNum = getRandomNum();
+    while (newPageNum == pageNumber) {
+        newPageNum = getRandomNum();
+    }
+        pageNumber = newPageNum;
+        updateSection(pageNumber);
+}
+
+const getRandomNum = function () {
+    let randomNum = Math.floor(Math.random() * (pages.length ));
+    // console.log(randomNum)
+    return randomNum;
 }
 
 const updateSection = function (pageNumber) {
@@ -63,4 +79,8 @@ prevTag.addEventListener("click", function () {
 
 nextTag.addEventListener("click", function () {
     next();
+})
+
+randomTag.addEventListener("click", function () {
+    random();
 })
